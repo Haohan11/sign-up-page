@@ -233,10 +233,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  background-image: url("/icon/eye.svg");
+  background-image: url("./icon/eye.svg");
 
   &:has(input:checked) {
-    background-image: url("/icon/eye-active.svg");
+    background-image: url("./icon/eye-active.svg");
   }
 }
 
@@ -257,13 +257,13 @@ body {
     width: 11px;
     height: 11px;
     margin-right: 4px;
-    background-image: url("/icon/check.svg");
+    background-image: url("./icon/check.svg");
   }
 
   .active {
     color: #000;
     .check-icon {
-      background-image: url("/icon/check-active.svg");
+      background-image: url("./icon/check-active.svg");
     }
   }
 }
@@ -292,7 +292,7 @@ body {
 
   &:has(input:checked) {
     .checkmark {
-      background: url("/icon/checkbox-active.svg");
+      background: url("./icon/checkbox-active.svg");
       background-position: center;
     }
   }
