@@ -22,11 +22,12 @@
         </div>
         <div id="third-party-buttons">
           <button type="button">
-            <img src="./icon/google-icon.svg" alt="google logo" />Sign up with Google
+            <img src="./icon/google-icon.svg" alt="google logo" />
+            Sign up with Google
           </button>
           <button type="button">
-            <img src="./icon/facebook-icon.svg" alt="facebook logo" />Sign up with
-            Facebook
+            <img src="./icon/facebook-icon.svg" alt="facebook logo" />
+            Sign up with Facebook
           </button>
         </div>
         <div id="or-use-email">
@@ -57,7 +58,13 @@
         </div>
         <div class="input-field">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder=" " required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder=" "
+            required
+          />
         </div>
         <div class="input-field">
           <label for="password">Password</label>
@@ -69,11 +76,9 @@
             required
             pattern="^(?=.*[0-9]).{8,}$"
           />
-          <div>
-            <label id="show-password">
-              <input type="checkbox" hidden />
-            </label>
-          </div>
+          <label id="show-password" class="escape">
+            <input class="escape" type="checkbox" hidden />
+          </label>
         </div>
         <div id="password-validation">
           <p id="password-valid-length">
