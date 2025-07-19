@@ -238,21 +238,17 @@ body {
 }
 
 .input-field:has(#password) {
-  --showpassword-width: 19px;
-  --padding-right: 14.5px;
-  --left-gap: 6px;
+  --showpassword-width: var(--input-height);
 
   #password {
-    padding-right: calc(
-      var(--showpassword-width) + var(--padding-right) + var(--left-gap)
-    );
+    padding-right: var(--showpassword-width);
   }
 
   #show-password {
     position: absolute;
     height: var(--showpassword-width);
     width: var(--showpassword-width);
-    right: var(--padding-right);
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -260,7 +256,7 @@ body {
     background-image: url("./icon/eye-active.svg"), url("./icon/eye.svg");
     background-repeat: no-repeat;
     background-position: 999px, center;
-    
+
     &:has(input:checked) {
       background-position: center, 999px;
     }
